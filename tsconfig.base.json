@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@dru/web-ui": ["libs/web-ui/src"],
+      "@dru/web-ui/components": ["libs/web-ui/src/components"],
+      "@dru/web-ui/utils": ["libs/web-ui/src/utils"],
+      "@dru/web-ui/hooks": ["libs/web-ui/src/hooks"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
