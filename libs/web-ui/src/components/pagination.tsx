@@ -1,5 +1,5 @@
 import * as React from "react"
-import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react"
+import { LuChevronLeft, LuChevronRight, LuEllipsis } from 'react-icons/lu';
 
 import { cn } from '../utils/cn';
 import { ButtonProps, buttonVariants } from "./button"
@@ -66,13 +66,13 @@ const PaginationPrevious = ({
   <PaginationLink
     aria-label="Go to previous page"
     size="default"
-    className={cn("gap-1 pl-2.5", className)}
+    className={cn('gap-1 pl-2.5', className)}
     {...props}
   >
-    <ChevronLeft className="h-4 w-4" />
+    <LuChevronLeft className="h-4 w-4" />
     <span>Previous</span>
   </PaginationLink>
-)
+);
 PaginationPrevious.displayName = "PaginationPrevious"
 
 const PaginationNext = ({
@@ -82,28 +82,28 @@ const PaginationNext = ({
   <PaginationLink
     aria-label="Go to next page"
     size="default"
-    className={cn("gap-1 pr-2.5", className)}
+    className={cn('gap-1 pr-2.5', className)}
     {...props}
   >
     <span>Next</span>
-    <ChevronRight className="h-4 w-4" />
+    <LuChevronRight className="h-4 w-4" />
   </PaginationLink>
-)
+);
 PaginationNext.displayName = "PaginationNext"
 
 const PaginationEllipsis = ({
   className,
   ...props
-}: React.ComponentProps<"span">) => (
+}: React.ComponentProps<'span'>) => (
   <span
     aria-hidden
-    className={cn("flex h-9 w-9 items-center justify-center", className)}
+    className={cn('flex h-9 w-9 items-center justify-center', className)}
     {...props}
   >
-    <MoreHorizontal className="h-4 w-4" />
+    <LuEllipsis className="h-4 w-4" />
     <span className="sr-only">More pages</span>
   </span>
-)
+);
 PaginationEllipsis.displayName = "PaginationEllipsis"
 
 export {

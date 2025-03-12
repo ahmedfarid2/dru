@@ -2,23 +2,23 @@
 
 import { usePathname } from 'next/navigation';
 import { DashboardLayout } from '@dru/web-ui';
-import { LayoutDashboard, Users, Package } from 'lucide-react';
+import { LuLayoutDashboard, LuUsers, LuPackage } from 'react-icons/lu';
 
 const navItems = [
   {
     title: 'Dashboard',
     href: '/admin/dashboard',
-    icon: LayoutDashboard,
+    icon: LuLayoutDashboard,
   },
   {
     title: 'Users',
     href: '/admin/dashboard/users',
-    icon: Users,
+    icon: LuUsers,
   },
   {
     title: 'Products',
     href: '/admin/dashboard/products',
-    icon: Package,
+    icon: LuPackage,
   },
 ];
 
@@ -37,7 +37,7 @@ export default function AdminDashboardLayout({
       currentPath={pathname}
       brand={{
         name: 'Dru',
-        logo: Package,
+        logo: LuPackage,
       }}
       user={{
         name: 'John Doe',

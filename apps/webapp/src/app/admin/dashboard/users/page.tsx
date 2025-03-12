@@ -15,7 +15,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@dru/web-ui';
-import { Search, UserPlus } from 'lucide-react';
+import { LuSearch, LuUserPlus } from 'react-icons/lu';
 
 const users = [
   {
@@ -76,7 +76,7 @@ export default function UsersPage() {
           <CardTitle>Users</CardTitle>
           <div className="flex items-center gap-4">
             <div className="relative">
-              <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+              <LuSearch className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input
                 placeholder="Search users..."
                 className="pl-8"
@@ -85,7 +85,7 @@ export default function UsersPage() {
               />
             </div>
             <Button>
-              <UserPlus className="mr-2 h-4 w-4" />
+              <LuUserPlus className="mr-2 h-4 w-4" />
               Add User
             </Button>
           </div>

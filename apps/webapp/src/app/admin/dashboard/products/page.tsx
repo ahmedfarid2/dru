@@ -14,7 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@dru/web-ui';
-import { Search, Plus, Filter } from 'lucide-react';
+import { LuSearch, LuPlus, LuFilter } from 'react-icons/lu';
 
 const products = [
   {
@@ -89,7 +89,7 @@ export default function ProductsPage() {
           <CardTitle>Products</CardTitle>
           <div className="flex items-center gap-4">
             <div className="relative">
-              <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+              <LuSearch className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input
                 placeholder="Search products..."
                 className="pl-8"
@@ -102,7 +102,7 @@ export default function ProductsPage() {
               onValueChange={setSelectedCategory}
             >
               <SelectTrigger className="w-[150px]">
-                <Filter className="mr-2 h-4 w-4" />
+                <LuFilter className="mr-2 h-4 w-4" />
                 <SelectValue placeholder="Category" />
               </SelectTrigger>
               <SelectContent>
@@ -114,7 +114,7 @@ export default function ProductsPage() {
               </SelectContent>
             </Select>
             <Button>
-              <Plus className="mr-2 h-4 w-4" />
+              <LuPlus className="mr-2 h-4 w-4" />
               Add Product
             </Button>
           </div>

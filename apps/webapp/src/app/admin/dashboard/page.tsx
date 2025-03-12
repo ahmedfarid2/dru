@@ -1,7 +1,7 @@
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@dru/web-ui';
-import { Users, Package, DollarSign, TrendingUp } from 'lucide-react';
+import { LuUsers, LuPackage, LuDollarSign, LuTrendingUp } from 'react-icons/lu';
 import {
   LineChart,
   Line,
@@ -17,25 +17,25 @@ const overviewCards = [
     title: 'Total Revenue',
     value: '$45,231.89',
     description: '+20.1% from last month',
-    icon: DollarSign,
+    icon: LuDollarSign,
   },
   {
     title: 'Total Users',
     value: '2,350',
     description: '+180 new users',
-    icon: Users,
+    icon: LuUsers,
   },
   {
     title: 'Total Products',
     value: '485',
     description: '45 added this month',
-    icon: Package,
+    icon: LuPackage,
   },
   {
     title: 'Active Sales',
     value: '12',
     description: '3 completed today',
-    icon: TrendingUp,
+    icon: LuTrendingUp,
   },
 ];
 
