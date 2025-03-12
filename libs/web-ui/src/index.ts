@@ -255,3 +255,8 @@ export {
   TooltipProvider,
   TooltipTrigger,
 } from './components/tooltip';
+
+// Layouts
+ export type { DashboardLayoutProps } from './layouts/dashboard.layout';
+ export { DashboardLayout } from './layouts/dashboard.layout';
+ 
